@@ -21,7 +21,7 @@ alias vconf="vim $DOTFILES/vim/.vimrc"
 alias gconf="vim $DOTFILES/ghostty/.config/ghostty/config"
 
 ## Commands 
-alias ls='eza --color=always --icons=auto --group-directories-first'
+alias ls='eza --color=always --icons=auto --group-directories-first --git-ignore'
 alias cd='z'
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
