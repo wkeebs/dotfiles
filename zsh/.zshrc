@@ -13,7 +13,7 @@ plugins=(git)
 
 # Aliases
 ## Config
-export DOTFILES="$HOME/dotfiles"
+export DOTFILES="$HOME/.config/dotfiles"
 export VIMRC="$DOTFILES/vim/.vimrc"
 alias zsrc="source $DOTFILES/zsh/.zshrc"
 alias zconf="vim $DOTFILES/zsh/.zshrc"
