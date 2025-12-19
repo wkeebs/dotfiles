@@ -17,7 +17,7 @@ export DOTFILES="$HOME/.config/dotfiles"
 export VIMRC="$DOTFILES/vim/.vimrc"
 alias zsrc="source $DOTFILES/zsh/.zshrc"
 alias zconf="vim $DOTFILES/zsh/.zshrc"
-alias vconf="vim $DOTFILES/vim/.vimrc"
+alias vconf="vim $VIMRC"
 alias gconf="vim $DOTFILES/ghostty/config"
 
 ## Commands 
