@@ -18,7 +18,7 @@ export VIMRC="$DOTFILES/vim/.vimrc"
 alias zsrc="source $DOTFILES/zsh/.zshrc"
 alias zconf="vim $DOTFILES/zsh/.zshrc"
 alias vconf="vim $DOTFILES/vim/.vimrc"
-alias gconf="vim $DOTFILES/ghostty/.config/ghostty/config"
+alias gconf="vim $DOTFILES/ghostty/config"
 
 ## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first --git-ignore'
