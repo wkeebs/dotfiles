@@ -12,11 +12,15 @@ source $ZSH/oh-my-zsh.sh
 plugins=(git)
 
 # Aliases
-alias zsrc='source ~/.zshrc'
-alias zconf='vim ~/.zshrc'
-alias vsrc='source ~/.vimrc'
-alias vconf='vim ~/.vimrc'
-alias gconf='vim $HOME/Library/Application\ Support/com.mitchellh.ghostty/config'
+## Config
+export DOTFILES="$HOME/dotfiles"
+export VIMRC="$DOTFILES/vim/.vimrc"
+alias zsrc="source $DOTFILES/zsh/.zshrc"
+alias zconf="vim $DOTFILES/zsh/.zshrc"
+alias vconf="vim $DOTFILES/vim/.vimrc"
+alias gconf="vim $DOTFILES/ghostty/.config/ghostty/config"
+
+## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first'
 alias cd='z'
 
