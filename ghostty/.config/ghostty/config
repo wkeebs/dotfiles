@@ -1,0 +1,11 @@
+# aesthetics
+theme=Catppuccin Frappe
+background-opacity=0.85
+background-blur=16
+macos-titlebar-style=hidden
+
+# typography
+font-size=14
+font-thicken=true
+font-thicken-strength=1
+adjust-cell-height=1
