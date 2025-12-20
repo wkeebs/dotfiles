@@ -14,11 +14,11 @@ brew install nvim
 # Symlinks
 ```sh
 export DOTFILES="~/.config/dotfiles"
-ln -s "$DOTFILES/zsh/.zshrc" ~/.zshrc
-ln -s "$DOTFILES/zsh/.zshenv" ~/.zshenv
-ln -s "$DOTFILES/vim/.vimrc" ~/.vimrc
-ln -s "$DOTFILES/ghostty/config" ~/.config/ghostty/config
-ln -s "$DOTFILES/aerospace/.aerospace.toml" ~/.aerospace.toml
+ln -sf "$DOTFILES/zsh/.zshrc" ~/.zshrc
+ln -sf "$DOTFILES/zsh/.zshenv" ~/.zshenv
+ln -sf "$DOTFILES/vim/.vimrc" ~/.vimrc
+ln -sf "$DOTFILES/ghostty/config" ~/.config/ghostty/config
+ln -sf "$DOTFILES/aerospace/.aerospace.toml" ~/.aerospace.toml
 ```
 
 # Commands
