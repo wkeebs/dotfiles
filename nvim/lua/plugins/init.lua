@@ -35,7 +35,7 @@ return {
     opts = {
         -- add any options here
     }
-}
+  }
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
