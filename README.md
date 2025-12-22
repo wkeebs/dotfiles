@@ -9,6 +9,7 @@ brew install fzf
 brew install --cask ghostty
 brew install --cask nikitabobko/tap/aerospace
 brew install nvim
+brew install tmux
 ```
 
 # Symlinks
@@ -19,10 +20,13 @@ ln -sf "$DOTFILES/zsh/.zshenv" ~/.zshenv
 ln -sf "$DOTFILES/vim/.vimrc" ~/.vimrc
 ln -sf "$DOTFILES/ghostty/config" ~/.config/ghostty/config
 ln -sf "$DOTFILES/aerospace/.aerospace.toml" ~/.aerospace.toml
+ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 ```
 
 # Commands
 - `zconf`: edit zshrc
 - `vconf`: edit vimrc
 - `gconf`: edit ghostty config
+- `tconf`: edit tmux config
+
 - `zsrc`: source zshrc
