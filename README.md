@@ -9,6 +9,7 @@ brew install --cask ghostty
 brew install --cask nikitabobko/tap/aerospace
 brew install nvim
 brew install tmux
+brew install lazygit
 ```
 
 # Symlinks

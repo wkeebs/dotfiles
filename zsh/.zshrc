@@ -28,6 +28,7 @@ alias tconf="nvim $DOTFILES/tmux/.tmux.conf"
 ## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first'
 alias cd='z'
+alias lg='lazygit'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
