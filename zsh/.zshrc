@@ -21,7 +21,7 @@ alias zsrc="source $DOTFILES/zsh/.zshrc"
 alias zconf="nvim $DOTFILES/zsh/.zshrc"
 alias vconf="nvim $VIMRC"
 alias gconf="nvim $DOTFILES/ghostty/config"
-
+alias aeconf="nvim $DOTFILES/aerospace/.aerospace.toml"
 ## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first'
 alias cd='z'
