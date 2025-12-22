@@ -1,5 +1,4 @@
 # Dependencies
-
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install romkatv/powerlevel10k/powerlevel10k
@@ -24,9 +23,11 @@ ln -sf "$DOTFILES/tmux/.tmux.conf" ~/.tmux.conf
 ```
 
 # Commands
+## Edit Config
 - `zconf`: edit zshrc
 - `vconf`: edit vimrc
 - `gconf`: edit ghostty config
 - `tconf`: edit tmux config
 
+## Refresh Config
 - `zsrc`: source zshrc
