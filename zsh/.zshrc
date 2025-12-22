@@ -22,7 +22,7 @@ alias zconf="nvim $DOTFILES/zsh/.zshrc"
 alias vconf="nvim $VIMRC"
 alias gconf="nvim $DOTFILES/ghostty/config"
 alias aeconf="nvim $DOTFILES/aerospace/.aerospace.toml"
-alias tconf="nvim $DOTFILES/aerospace/.aerospace.toml"
+alias tconf="nvim $DOTFILES/tmux/.tmux.conf"
 
 ## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first'
@@ -79,3 +79,16 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 export PATH="/opt/homebrew/bin:$PATH"
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# tat: tmux attach
+function tat {
+  name=$(basename `pwd` | sed -e 's/\.//g')
+
+  if tmux ls 2>&1 | grep "$name"; then
+    tmux attach -t "$name"
+  elif [ -f .envrc ]; then
+    direnv exec / tmux new-session -s "$name"
+  else
+    tmux new-session -s "$name"
+  fi
+}
