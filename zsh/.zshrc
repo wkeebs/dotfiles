@@ -18,6 +18,7 @@ plugins=(git)
 export DOTFILES="$HOME/.config/dotfiles"
 export VIMRC="$DOTFILES/vim/.vimrc"
 alias zsrc="source $DOTFILES/zsh/.zshrc"
+
 alias zconf="nvim $DOTFILES/zsh/.zshrc"
 alias vconf="nvim $VIMRC"
 alias gconf="nvim $DOTFILES/ghostty/config"
