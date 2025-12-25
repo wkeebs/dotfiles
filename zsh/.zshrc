@@ -94,3 +94,10 @@ function tat {
     tmux new-session -s "$name"
   fi
 }
+
+# bun completions
+[ -s "/Users/will/.bun/_bun" ] && source "/Users/will/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
