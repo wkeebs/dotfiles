@@ -205,3 +205,8 @@ automatically-unhide-macos-hidden-apps = false
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+
+[[on-window-detected]]
+  if.window-title-regex-substring = 'Shottr|Lark Meetings'
+    run = 'layout floating'
