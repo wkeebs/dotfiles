@@ -28,7 +28,7 @@ alias tconf="nvim $DOTFILES/tmux/.tmux.conf"
 ## Commands 
 alias ls='eza --color=always --icons=auto --group-directories-first'
 alias cd='z'
-alias lg='lazygit'
+lg() { [ -n "$1" ] && cd "$1"; lazygit; }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -42,6 +42,8 @@ export GOPRIVATE="*.byted.org,*.everphoto.cn,git.smartisan.com"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Applications/GoLand.app/Contents/MacOS
+eval "$(goenv init -)"
+export PATH="$HOME/.goenv/bin:$PATH"
 
 # launch repo with goland
 goland() {
