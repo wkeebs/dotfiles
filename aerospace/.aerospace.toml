@@ -208,7 +208,7 @@ automatically-unhide-macos-hidden-apps = false
 
 
 [[on-window-detected]]
-  if.window-title-regex-substring = 'Shottr|Lark Meetings'
+  if.app-name-regex-substring = 'Lark Meetings|Finder'
     run = 'layout floating'
 
 [[on-window-detected]]
