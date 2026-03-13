@@ -42,8 +42,8 @@ export GOPRIVATE="*.byted.org,*.everphoto.cn,git.smartisan.com"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Applications/GoLand.app/Contents/MacOS
-eval "$(goenv init -)"
 export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
 
 # launch repo with goland
 goland() {
@@ -103,3 +103,4 @@ function tat {
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=/Users/bytedance/.local/bin:$PATH

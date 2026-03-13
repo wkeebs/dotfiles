@@ -210,3 +210,10 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
   if.window-title-regex-substring = 'Shottr|Lark Meetings'
     run = 'layout floating'
+
+[workspace-to-monitor-force-assignment]
+  1 = 1 # main
+  A = 2 # arc
+  G = 2 # ghostty
+  C = 3 # cursor
+  O = 1 # obsidian
