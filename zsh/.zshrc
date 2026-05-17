@@ -29,7 +29,24 @@ alias tconf="nvim $DOTFILES/tmux/.tmux.conf"
 alias ls='eza --color=always --icons=auto --group-directories-first'
 alias cd='z'
 lg() { [ -n "$1" ] && cd "$1"; lazygit; }
+
+### cpp
 alias ojt='g++-15 -std=gnu++23 -O2 -o main main.cpp && oj test -c "./main" -d tests/'
+
+function cppnew {
+    cat > main.cpp << 'EOF'
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    return 0;
+}
+EOF
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
