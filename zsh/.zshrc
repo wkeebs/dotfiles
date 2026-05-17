@@ -124,3 +124,7 @@ function tat {
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=/Users/bytedance/.local/bin:$PATH
+
+# py
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
+
