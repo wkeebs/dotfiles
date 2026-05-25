@@ -49,7 +49,7 @@ int main() {
 EOF
 }
 alias cpprun='g++-15 -std=gnu++23 -O2 -o main main.cpp && ./main'
-
+alias cppconf='nvim $(acc config-dir)/main.cpp/main.cpp'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
